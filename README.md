@@ -26,14 +26,17 @@ Simulate historical trades from CSV files in real-time with adjustable replay sp
 
 ## Usage
 
-### Compile
+
+### From market_replay folder:
 
 
-	g++ -std=c++17 main.cpp Trade.cpp -o market_replay -pthread
+	cd build         # go to your existing build folder
+	cmake ..         # generate build system (if not already done)
+	cmake --build .  # compile the project
 
 ### Run
-	./market_replay
 
+	./main
 
 Enter inputs when prompted:
 
